@@ -50,8 +50,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         //Uso del Factory para crear nuestros pokemones
-        pokemon1 = PokeFactory.getPokemon("pokemon");
-        pokemon2 = PokeFactory.getPokemon("pokemon");
+        PokeFactory factoria = new PokeFactory();
+        pokemon1 = factoria.getPokemon("pokemon");
+        pokemon2 = factoria.getPokemon("pokemon");
 
         btn = (Button) findViewById(R.id.button);
         //Deshabilitamos el boton que nos dirige hacia la Pelea, para evitar errores.
