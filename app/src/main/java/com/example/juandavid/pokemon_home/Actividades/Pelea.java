@@ -154,7 +154,13 @@ public class Pelea extends Activity {
                     boton1.setEnabled(true);
                     boton2.setEnabled(true);
                     boton3.setEnabled(true);
+
+                    Toast.makeText(getApplicationContext(), "Comienza " + Nombre1 ,
+                            Toast.LENGTH_LONG).show();
                 } else {
+
+                    Toast.makeText(getApplicationContext(), "Comienza " + Nombre2 ,
+                            Toast.LENGTH_LONG).show();
                     boton11.setEnabled(true);
                     boton22.setEnabled(true);
                     boton33.setEnabled(true);
@@ -166,6 +172,7 @@ public class Pelea extends Activity {
 
                         Attack(vida2, Vida2);
                         check(vida1, vida2);
+                        msj(Nombre2);
 
                         boton2.setEnabled(false);
                         boton3.setEnabled(false);
@@ -183,6 +190,7 @@ public class Pelea extends Activity {
 
                         Attack(vida2, Vida2);
                         check(vida1, vida2);
+                        msj(Nombre2);
 
                         boton2.setEnabled(false);
                         boton3.setEnabled(false);
@@ -200,6 +208,7 @@ public class Pelea extends Activity {
 
                         Attack(vida2, Vida2);
                         check(vida1, vida2);
+                        msj(Nombre2);
 
                         boton2.setEnabled(false);
                         boton3.setEnabled(false);
@@ -217,6 +226,7 @@ public class Pelea extends Activity {
 
                         Attack(vida1, Vida1);
                         check(vida1, vida2);
+                        msj(Nombre1);
 
                         boton22.setEnabled(false);
                         boton33.setEnabled(false);
@@ -234,6 +244,7 @@ public class Pelea extends Activity {
 
                         Attack(vida1, Vida1);
                         check(vida1, vida2);
+                        msj(Nombre1);
 
                         boton22.setEnabled(false);
                         boton33.setEnabled(false);
@@ -251,6 +262,7 @@ public class Pelea extends Activity {
 
                         Attack(vida1, Vida1);
                         check(vida1, vida2);
+                        msj(Nombre1);
 
                         boton22.setEnabled(false);
                         boton33.setEnabled(false);
@@ -330,4 +342,19 @@ public class Pelea extends Activity {
         vida_num.setText(operacion + "");
 
     }
+
+
+    public void msj(String nombre) {
+
+        String[] msj={"Wuau","Eso debió doler",nombre+" esta en graves problemas","Perfecto","Gran ataque"};
+
+        int indice = (int) (Math.random() * 5);
+
+        Toast.makeText(getApplicationContext(), msj[indice],
+                Toast.LENGTH_SHORT).show();
+
+
+    }
+
+
 }
