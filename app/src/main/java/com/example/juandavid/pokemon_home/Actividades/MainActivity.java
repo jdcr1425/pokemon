@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
                 //Generacion de un numero random, para enseguida ser concatenado a la url de la api.
                 int indicePokemon = (int) (Math.random() * 721);
 
-                String url = "http://pokeapi.co/api/v2/pokemon/" + indicePokemon + "";
+                String url = "https://pokeapi.co/api/v2/pokemon/" + indicePokemon + "";
 
                 JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -116,7 +116,7 @@ public class MainActivity extends Activity {
                 //Generacion de un numero random, para enseguida ser concatenado a la url de la api.
                 int indicePokemon2 = (int) (Math.random() * 721);
 
-                String url2 = "http://pokeapi.co/api/v2/pokemon/" + indicePokemon2 + "";
+                String url2 = "https://pokeapi.co/api/v2/pokemon/" + indicePokemon2 + "";
 
                 JsonObjectRequest jsObjRequest2 = new JsonObjectRequest(Request.Method.GET, url2, null, new Response.Listener<JSONObject>() {
 
