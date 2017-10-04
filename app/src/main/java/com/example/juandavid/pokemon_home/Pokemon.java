@@ -36,18 +36,18 @@ public class Pokemon {
 
 
     public String getNombre(JSONObject datos){
-         String name="";
+
          try {
-            name = datos.getString("name");
+            nombre = datos.getString("name");
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        return name;
+        return nombre;
     }
 
     public String getExperiencia(JSONObject datos){
-        String experiencia="";
+
         try {
             experiencia = datos.getString("base_experience");
         } catch (JSONException e) {
@@ -122,7 +122,12 @@ return habilidades;
 
 }
 
+public String getUrlPokemon(int a){
 
+    String url = "https://pokeapi.co/api/v2/pokemon/" + a + "";
+
+    return url;
+}
 
 
 }

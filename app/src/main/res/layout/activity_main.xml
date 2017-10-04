@@ -63,11 +63,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_weight="1"
-            android:text=""
+            android:editable="true"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
             android:textStyle="bold"
-            android:typeface="sans" />
+            android:typeface="sans"
+            android:visibility="visible" />
 
         <Space
             android:layout_width="90dp"
@@ -93,10 +94,10 @@
         android:background="@drawable/button_selector"/>
 
 
-
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="Pelea!" />
 </LinearLayout>
