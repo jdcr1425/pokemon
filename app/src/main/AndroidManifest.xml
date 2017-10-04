@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/unnamed"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Actividades.MainActivity">
+        <activity android:name=".Controllers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Actividades.Pelea" />
-        <activity android:name=".Actividades.Ganador"></activity>
+        <activity android:name=".Controllers.Pelea" />
+        <activity android:name=".Controllers.Ganador"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 package com.example.juandavid.pokemon_home.Factory;
 
-import com.example.juandavid.pokemon_home.Pokemon.Pokemon;
+import com.example.juandavid.pokemon_home.Pokemon;
 
 /**
  * Created by Juan David on 22/09/2017.
