@@ -47,7 +47,8 @@ public class MainActivityEspressoTest {
 
         onView(withId(R.id.button)).check(matches(not(isEnabled())));
 
-    }
+
+        }
 
 
 
