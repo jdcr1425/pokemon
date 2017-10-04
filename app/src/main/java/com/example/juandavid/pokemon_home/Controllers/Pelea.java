@@ -311,7 +311,7 @@ public class Pelea extends Activity {
         //aqui defeinimos que el pokemon 2 gana la batalla y lo mostarmos en otra actividad.
         if (a.getProgress() < 1) {
             Toast.makeText(this, "¡¡¡¡GAME OVER, " + Nombre2 + " Ganó!!!!",
-                    Toast.LENGTH_LONG).show();
+                    Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Pelea.this, Ganador.class);
 
             intent.putExtra("url", url2);
@@ -323,7 +323,7 @@ public class Pelea extends Activity {
         //aqui defeinimos que el pokemon 1 gana la batalla y lo mostramos en otra actividad.
             if (b.getProgress() < 1) {
                 Toast.makeText(this, "¡¡¡¡GAME OVER, " + Nombre1 + " Ganó!!!!",
-                        Toast.LENGTH_LONG).show();
+                        Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Pelea.this, Ganador.class);
                 intent.putExtra("url", url1);
                 intent.putExtra("name", Nombre1);
